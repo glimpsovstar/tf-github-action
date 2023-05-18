@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '14'
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: '${{ secrets.DJOO_TF_AWS_KEY }}'
           aws-secret-access-key: '${{ secrets.DJOO_TF_AWS_SECRET }}'
