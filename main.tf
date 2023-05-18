@@ -1,3 +1,12 @@
+terraform {
+  backend "s3" {
+    bucket = "djoo-tf-state-bucket"
+    key = "terraform.tfstate"
+    region = "ap-southeast-2"
+    dynamodb_table = "tf-state-table"
+  }
+}
+
 data "aws_ami" "ubuntu" {
     most_recent = true
 filter {
