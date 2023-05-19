@@ -22,4 +22,5 @@ jobs:
       - name: Terraform destroy
         id:   destroy
         run: |
+          terraform init
           terraform destroy
